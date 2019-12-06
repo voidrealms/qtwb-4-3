@@ -39,7 +39,7 @@ void Dialog::init()
 
 void Dialog::load()
 {
-    QSettings settings;
+    QSettings setting("MyCompany","MyApp");
     QString value = settings.value("font","").toString();
     QFont font;
 
@@ -55,7 +55,7 @@ void Dialog::load()
 
 void Dialog::save()
 {
-    QSettings settings;
+    QSettings setting("MyCompany","MyApp");
     settings.setValue("font", ui->lineEdit->font().toString());
 }
 
