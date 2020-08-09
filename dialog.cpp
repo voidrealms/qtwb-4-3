@@ -56,23 +56,5 @@ void Dialog::load()
 void Dialog::save()
 {
     QSettings setting("MyCompany","MyApp");
-    settings.setValue("font", ui->lineEdit->font().toString());
+    setting.setValue("font", ui->lineEdit->font().toString());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
