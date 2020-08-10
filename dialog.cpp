@@ -40,7 +40,7 @@ void Dialog::init()
 void Dialog::load()
 {
     QSettings setting("MyCompany","MyApp");
-    QString value = settings.value("font","").toString();
+    QString value = setting.value("font","").toString();
     QFont font;
 
     if(!value.isEmpty())
